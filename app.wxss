@@ -1,0 +1,204 @@
+page,image { height: 100%;width: 100%}
+/**/
+
+li { list-style: none;}
+/*辅助文字*/
+.extra_small   { font-size: 12px;line-height:1 }
+/*正文（小）*/
+.small   { font-size: 13px;line-height:1.3 }
+/*正文*/
+.base   { font-size: 14px;line-height:1.3}
+/*小标题*/
+.medium   { font-size: 16px;line-height:1.5}
+/*标题*/
+.large   { font-size: 18px;line-height:1.7;}
+/*主标题*/
+.extra_large   { font-size: 20px;line-height:1.7;}
+.size20 { font-size: 20px;}
+textarea { outline:none;resize:none !important}
+.w { width: 100% !important;}
+.h { height: 100% !important;}
+.pointer {cursor: pointer !important;}
+.fl { float: left}
+.fr { float: right}
+.clearfix:after{content:'';display: block;height: 0;clear: both;}
+.title { text-align: center;}
+.title-r { text-align: right;}
+.hide{ display: none; }
+.show{ display: block; }
+.line-block { display: inline-block;}
+.ellipsis{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.overflow{ overflow: hidden; }
+.p0 {padding: 0 !important;}
+.pt0 {padding-top: 0 !important;}
+.pr0 {padding-right: 0 !important;}
+.pb0 {padding-bottom: 0 !important;}
+.pl0 {padding-left: 0 !important;}
+.p5 {padding: 5px !important;}
+.pt5 {padding-top: 5px !important;}
+.pb5 {padding-bottom: 5px !important;}
+.pr5 {padding-right: 5px !important;}
+.pl5 {padding-left: 5px !important;}
+.p10 {padding: 10px !important;}
+.pl0 {padding-left: 0 !important;}
+.pr0 {padding-right: 0 !important;}
+.pt10 {padding-top: 10px !important;}
+.pb10 {padding-bottom: 10px !important;}
+.pr10 {padding-right: 10px !important;}
+.pl10 {padding-left: 10px !important;}
+.p20 {padding: 20px !important;}
+.pl20 {padding-left: 20px !important;}
+.pb20 {padding-bottom: 20px !important;}
+.pt20 {padding-top: 20px !important;}
+.pr20 {padding-right: 20px !important;}
+.m0 { margin: 0 !important;}
+.mt0 { margin-top: 0px !important;}
+.mb0 { margin-bottom: 0px !important;}
+.ml0 { margin-left: 0px !important;}
+.mr0 { margin-right: 0px !important;}
+.m5 { margin: 5px !important;}
+.ml5 { margin-left: 5px !important;}
+.mr5 { margin-right: 5px !important;}
+.mt5 { margin-top: 5px !important;}
+.mb5 { margin-bottom: 5px !important;}
+.m10 { margin: 10px !important;}
+.ml10 { margin-left: 10px !important;}
+.mr10 { margin-right: 10px !important;}
+.mt10 { margin-top: 10px !important;}
+.mb10 { margin-bottom: 10px !important;}
+.m20 { margin: 20px !important;}
+.ml20 { margin-left: 20px !important;}
+.mr20 { margin-right: 20px !important;}
+.mt20 { margin-top: 20px !important;}
+.mb20 { margin-bottom: 20px !important;}
+.lh16 { line-height: 16px}
+.lh18 { line-height: 18px}
+.lh20 { line-height: 20px}
+.lh40 { line-height: 40px}
+.h40 { height: 40px}
+.title { text-align: center;}
+.title-r { text-align: right;}
+.hide{ display: none; }
+.show{ display: block; }
+.line-block { display: inline-block;}
+.ellipsis{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.border { border: 1px solid #dedcdc;}
+.border-t { border-top: 1px solid #dedcdc;}
+.border-b { border-bottom: 1px solid #dedcdc;}
+.border-r { border-right: 1px solid #dedcdc;}
+.border-l { border-left: 1px solid #dedcdc;}
+.border_r { border-right: 1px solid #dedcdc;}
+.border_t { border-top: 1px solid #dedcdc;}
+.border_b { border-bottom: 1px solid #dedcdc;}
+.border_br { border-bottom: 1px solid #dedcdc;border-right: 1px solid #dedcdc;}
+.border_tl { border-top: 1px solid #dedcdc;border-left: 1px solid #dedcdc;}
+.border-t-d { border-top: 1px #dedcdc dashed;}
+.border-b-d { border-bottom: 1px #dedcdc dashed;}
+.border-l-d { border-left: 1px #dedcdc dashed;}
+.border-r-d { border-right: 1px #dedcdc dashed;}
+.border-lt { border-top-left-radius: 50px;}
+.border-lb { border-bottom-left-radius: 50px;}
+.border-rt { border-top-right-radius: 50px;}
+.border-rb { border-bottom-right-radius: 50px;}
+.border-no { border: none}
+.rowPiece { display: inline-block;}
+.active:hover { background: rgba(204, 204, 204, 0.5)}
+.radius { border-radius: 50%}
+.b_radius { border-radius: 6px;}
+.iconWh { width: 34px;height: 34px}
+
+.rotate180 { transform:rotate(180deg)}
+.sbox_shadow { box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)}
+.qbox_shadow { box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)}
+
+/* transition属性 */
+.transition { transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1)}
+/* 字体颜色 */
+.lan { color: #4c84bd}
+.grey { color: #666}
+.grey_1 { color: #595858}
+.pink { color: #ea76b7}
+.paleBlue { color: #3cafff}
+.danger { color: #F56C6C}
+.white { color: #fff}
+.primary { color: #599df8}
+.orange { color: #f1af73}
+/* 定位 */
+.relative { position: relative;}
+.absolute { position: absolute;}
+.fixed { position: fixed;}
+.positionF { position: fixed;z-index: 3;bottom: 0;left: 0; background: rgba(0,0,0,0.3);width: 100%;height: 100%;overflow: hidden;}
+.positionC { position: absolute; left: 50%;top: 50%;transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);}
+.positionCr { position: absolute; right: 0;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.positionCl { position: absolute; left: 0;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.positionTl { position: absolute; left: 0;top: 0;}
+.positionTc { position: absolute; left: 50%;top: 0;transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+.positionTr { position: absolute; right: 0;top: 0;}
+.positionBr { position: absolute; right: 0;bottom: 0;}
+.positionBl { position: absolute; left: 0;bottom: 0;}
+.positionBc { position: absolute; left: 50%;bottom: 0;transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+/*  flex布局  */
+.tw { display: flex;display: -webkit-flex;flex-wrap: wrap; }
+/*  flex布局 超出不换行  */
+.tw_nowrap { display: flex;display: -webkit-flex;flex-wrap: nowrap;}
+/* flex 前后对齐  */
+.tw_lr { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;}
+/* flex 底部对齐  */
+.tw_b { display: flex;display: -webkit-flex;align-items: flex-end;-webkit-align-items: flex-end;}
+/* flex 居中前后对齐  */
+.tw_clr { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;align-items: center;-webkit-align-items: center;}
+/* flex 纵向对齐  */
+.tw_tb { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;flex-direction: column;-webkit-flex-direction: column;}
+/* flex 纵向居中上下对齐  */
+.tw_ytb { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;flex-direction: column;align-items: center;-webkit-align-items: center;}
+/* flex 纵向居中对齐  */
+.tw_cy { display: flex;display: -webkit-flex;justify-content: center;-webkit-justify-content: center;flex-direction: column;align-items: center;-webkit-align-items: center;}
+/* flex 纵向对齐  */
+.tw_cl { display: flex;display: -webkit-flex;align-items: center;-webkit-align-items: center;flex-flow:row wrap;}
+/* flex 左右对其  */
+.tw_ct { display: flex;display: -webkit-flex;justify-content: center;-webkit-justify-content: center;}
+/* flex 居中对其  */
+.tw_c { display: flex;display: -webkit-flex;justify-content: center;-webkit-justify-content: center; align-items: center;-webkit-align-items: center;}
+/* flex 后居中对其  */
+.tw_cr { display: flex;display: -webkit-flex; align-items: center;-webkit-align-items: center;justify-content: flex-end;-webkit-justify-content: flex-end;}
+
+/*滚动条样式   -----  定义滑块 内阴影+圆角*/
+/* .slimScrollBar { width: 9px !important;} */
+/*滚动条整体样式 -- 高宽分别对应横竖滚动条的尺寸*/
+/* .scrollbar::-webkit-scrollbar { width: 8px;height: 8px; } */
+/*滚动条里面小方块*/
+/* .scrollbar::-webkit-scrollbar-thumb { border-radius: 5px; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); background: rgba(0,0,0,0.2); } */
+/*滚动条里面轨道*/ 
+/* .scrollbar::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); border-radius: 0; background: rgba(0,0,0,0.1); } */
+/*滚动条美化*/
+::-webkit-scrollbar {width:9px;height:9px;background: #fff}
+/*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果*/
+::-webkit-scrollbar-track {width: 6px;background-color:rgba( 0,0,0,0);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
+/*滚动条的设置*/
+::-webkit-scrollbar-thumb {background-color:rgba(144,147,153,.3);background-clip:padding-box;min-height:28px;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;cursor: pointer;}
+/*滚动条移上去的背景*/
+::-webkit-scrollbar-thumb:hover {background-color:rgba(144,147,153,.5);cursor: pointer; }
+
+/*  动画旋转  */
+.rotate {animation: rotate 1s linear infinite;z-index: 2}
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+.animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}
+.animated.flip{-webkit-backface-visibility:visible;-ms-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}
+.bounce{-webkit-animation-name:bounce;animation-name:bounce}
+/*  弹跳  */
+@-webkit-keyframes bounce{
+    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);transform:translateY(0)}
+    40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}
+    60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}
+}
+@keyframes bounce{
+    0%,100%,20%,50%,80%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+    40%{-webkit-transform:translateY(-12px);-ms-transform:translateY(-12px);transform:translateY(-12px)}
+    60%{-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}
+}
+

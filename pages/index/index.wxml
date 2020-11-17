@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<tw-table headers="{{headers}}" list="{{lists}}" binddel="del"></tw-table>
+
+
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

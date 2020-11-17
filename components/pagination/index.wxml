@@ -1,0 +1,10 @@
+<view class="tw_clr pagination">
+	<van-icon bindtap="prev" name="arrow-left" />
+	<view class="tw_c">
+		<block wx:for="{{list}}" wx:key="index" >
+			<span bindtap="setPage" data-page="{{item}}" wx:if="{{item != 0}}" class="page {{page==item?'active':''}}">{{item}}</span>
+			<van-icon wx:else class="pt2" name="ellipsis" />
+		</block>
+	</view>
+	<van-icon bindtap="next" name="arrow" />
+</view>

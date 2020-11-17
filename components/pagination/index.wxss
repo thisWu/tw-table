@@ -1,0 +1,13 @@
+
+/* flex 居中前后对齐  */
+.tw_clr { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;align-items: center;-webkit-align-items: center;}
+/* flex 纵向对齐  */
+.tw_cl { display: flex;display: -webkit-flex;align-items: center;-webkit-align-items: center;flex-flow:row wrap;}
+/* flex 居中前后对齐  */
+.tw_clr { display: flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;align-items: center;-webkit-align-items: center;}
+.relative { position: relative;}
+
+.pt2 { padding-top: 2rpx;}
+.pagination { padding: 10rpx;}
+.page { padding: 6rpx 16rpx;}
+.active {color: blue;}

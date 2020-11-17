@@ -1,0 +1,78 @@
+<view class="table-wrap relative" scroll-x="{{true}}">
+	<!--  wx:if="{{show}}" -->
+	<view class="tw_cl content">
+		<view class="table" style="{{isAutoWidth?'width:auto':'width:100%'}}">
+			<view class="tr">
+				<block wx:for="{{headers}}" wx:key="index">
+					<view class="th left" style="width:{{arrWidth[index]}}">{{item.title}}</view>
+				</block>
+			</view>
+			<view class="content_list w">
+				<view class="tr" wx:for="{{list.data}}" wx:key="i" wx:for-index="i" wx:for-item="list">
+					<block wx:for="{{headers}}" wx:key="j" wx:for-index="j">
+						<view wx:if="{{item.name != 'btns'}}" class="td left" style="width:{{arrWidth[j]}}">{{list[item.name]}}</view>
+						<view wx:else class="td left tw_c" style="width:{{arrWidth[j]}}">
+							<van-van-button round type="info" data-item="{{list}}" data-btn="{{item}}" data-j="{{j}}"
+								data-i="{{i}}" bindtap="caozuo" size="mini">操作</van-van-button>
+						</view>
+					</block>
+				</view>
+			</view>
+
+
+
+		</view>
+
+	</view>
+	<!-- 左定位 -->
+	<view class="fixed-left tw_cl content" wx:if="{{fixedLeftWidth>0}}" style="width:{{fixedLeftWidth+1}}rpx">
+		<view class="table" style="{{isAutoWidth?'width:auto':'width:100%'}}">
+			<view class="tr">
+				<view wx:for="{{fixedLeft}}" wx:key="index" wx:for-item="fiexd" class="th left"
+					style="width:{{arrWidth[fiexd.i]}}">{{fiexd.title}}</view>
+			</view>
+			<view class="tr" wx:for="{{list.data}}" wx:key="i" wx:index='i' wx:for-item="list">
+				<block wx:for="{{fixedLeft}}" wx:key="j" wx:for-index="j">
+					<!-- {{fiexd.name==item.name?'':'hide'}}  -->
+					<view wx:if="{{item.name != 'btns'}}" class="td left" style="width:{{arrWidth[j]}}">{{list[item.name]}}</view>
+					<view wx:else class="td left tw_c" style="width:{{arrWidth[j]}}">
+						<van-van-button round type="info" data-item="{{item}}" data-btn="{{list}}" data-j="{{j}}"
+							data-i="{{i}}" data-name="fixedLeft" bindtap="caozuo" size="mini">操作</van-van-button>
+					</view>
+				</block>
+			</view>
+		</view>
+	</view>
+	<!-- 右定位 -->
+	<view class="fixed-right tw_cl content" wx:if="{{fixedRightWidth>0}}" style="width:{{fixedRightWidth+2}}rpx">
+		<view class="table" style="{{isAutoWidth?'width:auto':'width:100%'}}">
+			<view class="tr">
+				<view wx:for="{{fixedRight}}" wx:key="index" wx:for-item="fiexd" class="th left"
+					style="width:{{arrWidth[fiexd.i]}}">{{fiexd.title}}</view>
+			</view>
+			<view class="tr" wx:for="{{list.data}}" wx:key="i" wx:index='i' wx:for-item="list">
+				<block wx:for="{{fixedRight}}" wx:key="j" wx:for-index="j">
+					<!-- {{fiexd.name==item.name?'':'hide'}}  -->
+					<view bindtap="clcik" data-item="{{list}}" data-head="{{item}}" data-i="{{i}}" wx:if="{{item.name != 'btns'}}" class="td left" style="width:{{arrWidth[j]}}">{{list[item.name]}}</view>
+					<view wx:else class="td left tw_c" style="width:{{arrWidth[j]}}">
+						<van-van-button round type="info" data-item="{{list}}" data-btn="{{item}}" data-j="{{j}}"
+							data-i="{{i}}" data-name="fixedRight" bindtap="caozuo" size="mini">操作</van-van-button>
+					</view>
+				</block>
+			</view>
+		</view>
+	</view>
+
+	<!-- 分页（页码） -->
+	<tw-pagination wx:if="{{showPagination}}" total="{{list.total}}" showPagination="{{showPagination}}" page="{{list.current_page}}" bindpagination="pagination" />
+
+	<!-- 操作按钮 -->
+	<van-action-sheet title="操作" show="{{ show }}" bind:close="onClose">
+		<view class="view_content van-share-sheet__options">
+			<view class="van-share-sheet__option" wx:for="{{btns}}" wx:key="index">
+				<van-button class="btn tw_c" round type="info" bindtap="handle"
+					data-click="{{item.name}}">{{item.title}}</van-button>
+			</view>
+		</view>
+	</van-action-sheet>
+</view>

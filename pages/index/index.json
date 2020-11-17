@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-notify": "@vant/weapp/notify/index",
+    "tw-table":"../../components/table"
+  }
+}
